@@ -8,7 +8,8 @@
 }
 
 /* shared styles */
-header{
+header, .banner-content,
+#about, .games-content{
     width: 80%;
     margin: 0 auto;
 }
@@ -116,4 +117,146 @@ nav ul li:last-child {
 nav ul li a {
     text-decoration: none;
     color: #3C354F;
+}
+
+/* banner section styles */
+#banner {
+    background-image: url("../images/Group 14.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.banner-content {
+    align-items: center;
+}
+
+.banner-texts,
+.banner-image {
+    width: 50%;
+}
+
+.banner-texts h2 {
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-texts h1 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.banner-texts ul {
+    margin-bottom: 1rem;
+}
+
+.banner-texts ul li {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.banner-image img {
+    display: inline-block;
+    width: 100%;
+}
+
+/* about section styles */
+.about-content {
+    align-items: center;
+    padding: 50px 0;
+}
+
+.about-image {
+    width: 60%;
+}
+
+.about-texts {
+    width: 40%;
+    text-align: right;
+}
+
+.about-image img {
+    display: inline-block;
+    width: 100%;
+}
+
+.purpose {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #534C64;
+}
+
+.quote {
+    color: #534C64;
+    font-size: 25px;
+}
+
+/* games section styles */
+.games-content {
+    padding: 50px 0;
+}
+
+.games-text {
+    text-align: center;
+}
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.game-image img {
+    width: 100%;
+    display: inline-block;
+}
+
+.game-image {
+    position: relative;
+}
+
+.game-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 7px);
+    width: calc(100% - 3px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border: 3px solid #F948B2;
+    justify-content: center;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+
+.game-image:hover .game-image-overlay {
+    transform: scale(1);
+    transition: all linear 0.3s;
+}
+
+.game-image-overlay div {
+    flex-direction: column;
+}
+
+.game-image-overlay img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.game-image-overlay p {
+    color: #F948B2;
+    font-size: 20px;
+}
+.icon3{
+    color: white;
+    font-weight: 700;
+    font-size: larger;
 }
