@@ -9,7 +9,9 @@
 
 /* shared styles */
 header, .banner-content,
-#about, .games-content{
+#about, .games-content, .features-content,
+.career-content,
+.category-content{
     width: 80%;
     margin: 0 auto;
 }
@@ -260,3 +262,143 @@ nav ul li a {
     font-weight: 700;
     font-size: larger;
 }
+
+/* features section styles */
+.features-content {
+    padding: 30px 0;
+}
+
+.first-row-container,
+.second-row-container {
+    align-items: center;
+}
+
+.features-text {
+    width: 40%;
+    text-align: right;
+}
+
+.features-img {
+    width: 60%;
+}
+
+.image-container {
+    justify-content: flex-end;
+}
+
+.float-image-parent,
+.float-image-parent-two {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+}
+
+.float-image-parent>img,
+.float-image-parent-two>img {
+    display: inline-block;
+    width: 100%;
+}
+
+.float-image {
+    position: absolute;
+    bottom: -70px;
+    left: -110px;
+    width: 230px;
+}
+
+.float-image img,
+.float-image-two img {
+    display: inline-block;
+    width: 100%;
+}
+
+.second-row {
+    margin-top: 100px;
+}
+
+.features-text-two {
+    width: 40%;
+    text-align: left;
+}
+
+.float-image-two {
+    position: absolute;
+    bottom: -70px;
+    right: -110px;
+    width: 250px;
+}
+
+/* careers section styles */
+#career {
+    background-color: #FF42A5;
+    margin: 100px 0 50px 0;
+}
+
+.career-content {
+    align-items: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.career-text,
+.career-image {
+    width: 50%;
+}
+
+.career-content p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.roles {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.career-content li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.career-content button {
+    color: #FF42A5;
+}
+
+.right {
+    text-align: right;
+}
+
+.career-image img {
+    display: inline-block;
+    width: 100%;
+}
+
+/* category section styles */
+.category-content {
+    padding-bottom: 50px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.category {
+    align-items: center;
+    border-radius: 35px;
+    padding: 6px 6px;
+}
+
+.category:hover {
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.category img {
+    width: 40px;
+    margin-right: 10px;
+}
+
