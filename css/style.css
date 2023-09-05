@@ -381,13 +381,15 @@ nav ul li a {
 .category-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
+    gap: 10px;
+    
 }
 
 .category {
     align-items: center;
     border-radius: 35px;
     padding: 6px 6px;
+    
 }
 
 .category:hover {
@@ -443,6 +445,7 @@ footer {
 
 .useful-links {
     grid-template-columns: repeat(4, 1fr);
+    color: rgba(255, 255, 255, 0.60);;
 }
 
 .navigation-links {

@@ -54,4 +54,99 @@
     .logo img {
         width: 70px;
     }
+
+     /* banner */
+     #banner {
+        background: none;
+    }
+
+    .banner-content {
+        flex-direction: column-reverse;
+        gap: 40px;
+        
+    }
+
+    .banner-texts {
+        background-image: url("./images/Group14.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    .banner-texts h2 {
+        font-size: 35px;
+    }
+
+    .banner-texts h1 {
+        font-size: 70px;
+    }
+
+    .banner-texts ul li {
+        font-size: 18px;
+    }
+
+    /* about */
+    .about-texts {
+        text-align: center;
+    }
+
+    /* games */
+    .games-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* features */
+    .first-row-container {
+        margin-bottom: 125px;
+    }
+
+    .features-text,
+    .features-text-two {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .image-container,
+    .image-container-two {
+        position: relative;
+    }
+
+    .second-row-container {
+        flex-direction: column-reverse;
+    }
+
+    .float-image-parent,
+    .float-image-parent-two {
+        position: static;
+        width: 80%;
+    }
+
+    .float-image {
+        left: 0;
+    }
+
+    .float-image-two {
+        right: 0;
+    }
+
+    /* career */
+    .career-content {
+        gap: 50px;
+    }
+
+    /* category */
+    .category-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        
+    }
+    /* footer */
+    .navigation-links, .social-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .useful-links {
+        grid-template-columns: repeat(2, 1fr);
+       color: #505050;
+    }
 }
