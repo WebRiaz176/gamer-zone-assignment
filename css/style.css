@@ -11,7 +11,7 @@
 header, .banner-content,
 #about, .games-content, .features-content,
 .career-content,
-.category-content{
+.category-content, .footer-content{
     width: 80%;
     margin: 0 auto;
 }
@@ -400,5 +400,64 @@ nav ul li a {
 .category img {
     width: 40px;
     margin-right: 10px;
+}
+
+/* footer section styles */
+footer {
+    background-color: #0B0223;
+    color: white;
+}
+
+.footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.footer-logo {
+    margin-bottom: 1.5rem;
+}
+
+.footer-content li {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.footer-content li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-links,
+.social-links,
+.useful-links {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+}
+
+.navigation-links,
+.social-links {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.useful-links {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.navigation-links {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-links {
+    font-size: 30px;
+}
+
+.useful-links li,
+.copyright-text {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
 }
 
