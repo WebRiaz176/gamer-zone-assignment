@@ -1,0 +1,57 @@
+/* media queries for responsive for mobile devices */
+@media screen and (max-width: 576px) {
+
+    /* shared */
+    body {
+        background-color: #FFFFFF;
+    }
+
+    .btn {
+        border-radius: 35px;
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+
+    .section-description {
+        line-height: 22px;
+    }
+
+    nav,
+    nav ul,
+    .about-content,
+    .first-row-container,
+    .second-row-container,
+    .career-content {
+        flex-direction: column;
+    }
+
+    .banner-texts,
+    .banner-image,
+    .about-image,
+    .about-texts,
+    .features-text,
+    .features-text-two,
+    .features-img,
+    .career-text,
+    .career-image {
+        width: 100%;
+    }
+
+    /* navbar */
+    nav,
+    nav ul,
+    .about-content {
+        gap: 20px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+}
